@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/colorid/colorid.egg-info
+writing ../../build/colorid/colorid.egg-info/PKG-INFO
+writing dependency_links to ../../build/colorid/colorid.egg-info/dependency_links.txt
+writing entry points to ../../build/colorid/colorid.egg-info/entry_points.txt
+writing requirements to ../../build/colorid/colorid.egg-info/requires.txt
+writing top-level names to ../../build/colorid/colorid.egg-info/top_level.txt
+writing manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+reading manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+writing manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid
+copying colorid/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid
+running install
+running install_lib
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid
+copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid
+byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index/packages
+copying resource/colorid -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index/packages
+copying package.xml -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/colorid
+running install_egg_info
+Copying ../../build/colorid/colorid.egg-info to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/install.log'

@@ -1,0 +1,33 @@
+[1.726s] Invoking command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorid': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colorid build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/install.log --install-scripts $base/lib/colorid --single-version-externally-managed
+[2.153s] running egg_info
+[2.154s] creating ../../build/colorid/colorid.egg-info
+[2.155s] writing ../../build/colorid/colorid.egg-info/PKG-INFO
+[2.156s] writing dependency_links to ../../build/colorid/colorid.egg-info/dependency_links.txt
+[2.156s] writing entry points to ../../build/colorid/colorid.egg-info/entry_points.txt
+[2.157s] writing requirements to ../../build/colorid/colorid.egg-info/requires.txt
+[2.157s] writing top-level names to ../../build/colorid/colorid.egg-info/top_level.txt
+[2.200s] writing manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+[2.293s] reading manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+[2.295s] writing manifest file '../../build/colorid/colorid.egg-info/SOURCES.txt'
+[2.296s] running build
+[2.296s] running build_py
+[2.297s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build
+[2.297s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib
+[2.297s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid
+[2.298s] copying colorid/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid
+[2.298s] running install
+[2.300s] running install_lib
+[2.302s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid
+[2.303s] copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build/lib/colorid/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid
+[2.304s] byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid/__init__.py to __init__.cpython-38.pyc
+[2.308s] running install_data
+[2.310s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index
+[2.311s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index
+[2.312s] creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index/packages
+[2.312s] copying resource/colorid -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/ament_index/resource_index/packages
+[2.313s] copying package.xml -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/share/colorid
+[2.314s] running install_egg_info
+[2.317s] Copying ../../build/colorid/colorid.egg-info to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages/colorid-0.0.0-py3.8.egg-info
+[2.320s] running install_scripts
+[2.375s] writing list of installed files to '/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/install.log'
+[2.444s] Invoked command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorid' returned '0': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorid/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colorid build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorid/install.log --install-scripts $base/lib/colorid --single-version-externally-managed
