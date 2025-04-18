@@ -1,0 +1,22 @@
+[1.657s] Invoking command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorid': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/color_detection build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/install.log --install-scripts $base/lib/colorid --single-version-externally-managed
+[1.985s] running egg_info
+[1.986s] writing ../../build/color_detection/colorid.egg-info/PKG-INFO
+[1.987s] writing dependency_links to ../../build/color_detection/colorid.egg-info/dependency_links.txt
+[1.987s] writing entry points to ../../build/color_detection/colorid.egg-info/entry_points.txt
+[1.987s] writing requirements to ../../build/color_detection/colorid.egg-info/requires.txt
+[1.987s] writing top-level names to ../../build/color_detection/colorid.egg-info/top_level.txt
+[2.033s] reading manifest file '../../build/color_detection/colorid.egg-info/SOURCES.txt'
+[2.034s] writing manifest file '../../build/color_detection/colorid.egg-info/SOURCES.txt'
+[2.035s] running build
+[2.035s] running build_py
+[2.036s] running install
+[2.037s] running install_lib
+[2.040s] running install_data
+[2.041s] running install_egg_info
+[2.044s] removing '/home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/python3.8/site-packages/colorid-0.0.0-py3.8.egg-info' (and everything under it)
+[2.045s] Copying ../../build/color_detection/colorid.egg-info to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/python3.8/site-packages/colorid-0.0.0-py3.8.egg-info
+[2.046s] running install_scripts
+[2.077s] Installing color_detector script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/colorid
+[2.077s] Installing color_subscriber script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/colorid
+[2.078s] writing list of installed files to '/home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/install.log'
+[2.138s] Invoked command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorid' returned '0': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/color_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/color_detection build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/color_detection/install.log --install-scripts $base/lib/colorid --single-version-externally-managed

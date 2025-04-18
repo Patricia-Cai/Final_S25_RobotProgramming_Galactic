@@ -1,0 +1,4 @@
+[console_scripts]
+webcam_pub = colorcap.cam_pub:main
+webcam_sub = colorcap.cam_sub:main
+

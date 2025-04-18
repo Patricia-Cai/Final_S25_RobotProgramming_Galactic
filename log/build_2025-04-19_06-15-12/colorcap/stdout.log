@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/colorcap/colorcap.egg-info
+writing ../../build/colorcap/colorcap.egg-info/PKG-INFO
+writing dependency_links to ../../build/colorcap/colorcap.egg-info/dependency_links.txt
+writing entry points to ../../build/colorcap/colorcap.egg-info/entry_points.txt
+writing requirements to ../../build/colorcap/colorcap.egg-info/requires.txt
+writing top-level names to ../../build/colorcap/colorcap.egg-info/top_level.txt
+writing manifest file '../../build/colorcap/colorcap.egg-info/SOURCES.txt'
+reading manifest file '../../build/colorcap/colorcap.egg-info/SOURCES.txt'
+writing manifest file '../../build/colorcap/colorcap.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap
+copying colorcap/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap
+copying colorcap/cam_sub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap
+copying colorcap/cam_pub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap
+running install
+running install_lib
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap
+copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap/__init__.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap
+copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap/cam_sub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap
+copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap/cam_pub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap
+byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap/cam_sub.py to cam_sub.cpython-38.pyc
+byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap/cam_pub.py to cam_pub.cpython-38.pyc
+running install_data
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/share/ament_index
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/share/ament_index/resource_index
+creating /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/share/ament_index/resource_index/packages
+copying resource/colorcap -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/share/ament_index/resource_index/packages
+copying package.xml -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/share/colorcap
+running install_egg_info
+Copying ../../build/colorcap/colorcap.egg-info to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap-0.0.0-py3.8.egg-info
+running install_scripts
+Installing webcam_pub script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/colorcap
+Installing webcam_sub script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/colorcap
+writing list of installed files to '/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/install.log'

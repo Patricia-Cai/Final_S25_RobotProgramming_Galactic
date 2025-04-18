@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/colorcap/colorcap.egg-info/PKG-INFO
+../../build/colorcap/colorcap.egg-info/SOURCES.txt
+../../build/colorcap/colorcap.egg-info/dependency_links.txt
+../../build/colorcap/colorcap.egg-info/entry_points.txt
+../../build/colorcap/colorcap.egg-info/requires.txt
+../../build/colorcap/colorcap.egg-info/top_level.txt
+../../build/colorcap/colorcap.egg-info/zip-safe
+colorcap/__init__.py
+colorcap/cam_pub.py
+colorcap/cam_sub.py
+resource/colorcap
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
