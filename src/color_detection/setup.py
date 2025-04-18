@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'colorid'
+package_name = 'color_detection'
 
 setup(
     name=package_name,
@@ -13,15 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='yahboom',
-    maintainer_email='caiyaya@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='your_name',
+    maintainer_email='your_email@example.com',
+    description='Color detection package for ROSMaster X3',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'color_detector = colorid.colorid_pub:main',
-		'color_subscriber = colorid.colorid_sub:main',
+            'color_detector = color_detection.color_detector:main',
+            'color_subscriber = color_detection.color_subscriber:main',
         ],
     },
 )

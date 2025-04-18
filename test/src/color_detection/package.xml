@@ -4,7 +4,7 @@
   <name>color_detection</name>
   <version>0.0.0</version>
   <description>Color detection package for ROSMaster X3</description>
-  <maintainer email="cai@example.com">Your Name</maintainer>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
   <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

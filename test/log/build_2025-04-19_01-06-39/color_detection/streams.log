@@ -1,0 +1,41 @@
+[0.738s] Invoking command in '/home/yahboom/test/src/color_detection': PYTHONPATH=/home/yahboom/test/build/color_detection/prefix_override:/home/yahboom/test/install/color_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/color_detection build --build-base /home/yahboom/test/build/color_detection/build install --record /home/yahboom/test/build/color_detection/install.log --install-scripts $base/lib/color_detection --single-version-externally-managed
+[0.967s] running egg_info
+[0.967s] creating ../../build/color_detection/color_detection.egg-info
+[0.968s] writing ../../build/color_detection/color_detection.egg-info/PKG-INFO
+[0.968s] writing dependency_links to ../../build/color_detection/color_detection.egg-info/dependency_links.txt
+[0.968s] writing entry points to ../../build/color_detection/color_detection.egg-info/entry_points.txt
+[0.968s] writing requirements to ../../build/color_detection/color_detection.egg-info/requires.txt
+[0.968s] writing top-level names to ../../build/color_detection/color_detection.egg-info/top_level.txt
+[0.970s] writing manifest file '../../build/color_detection/color_detection.egg-info/SOURCES.txt'
+[1.003s] reading manifest file '../../build/color_detection/color_detection.egg-info/SOURCES.txt'
+[1.004s] writing manifest file '../../build/color_detection/color_detection.egg-info/SOURCES.txt'
+[1.005s] running build
+[1.005s] running build_py
+[1.006s] creating /home/yahboom/test/build/color_detection/build
+[1.006s] creating /home/yahboom/test/build/color_detection/build/lib
+[1.006s] creating /home/yahboom/test/build/color_detection/build/lib/color_detection
+[1.006s] copying color_detection/__init__.py -> /home/yahboom/test/build/color_detection/build/lib/color_detection
+[1.006s] copying color_detection/color_subscriber.py -> /home/yahboom/test/build/color_detection/build/lib/color_detection
+[1.006s] copying color_detection/color_detector.py -> /home/yahboom/test/build/color_detection/build/lib/color_detection
+[1.006s] running install
+[1.007s] running install_lib
+[1.008s] creating /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection
+[1.008s] copying /home/yahboom/test/build/color_detection/build/lib/color_detection/__init__.py -> /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection
+[1.009s] copying /home/yahboom/test/build/color_detection/build/lib/color_detection/color_subscriber.py -> /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection
+[1.009s] copying /home/yahboom/test/build/color_detection/build/lib/color_detection/color_detector.py -> /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection
+[1.010s] byte-compiling /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection/__init__.py to __init__.cpython-38.pyc
+[1.011s] byte-compiling /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection/color_subscriber.py to color_subscriber.cpython-38.pyc
+[1.012s] byte-compiling /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection/color_detector.py to color_detector.cpython-38.pyc
+[1.012s] running install_data
+[1.013s] creating /home/yahboom/test/install/color_detection/share/ament_index
+[1.014s] creating /home/yahboom/test/install/color_detection/share/ament_index/resource_index
+[1.014s] creating /home/yahboom/test/install/color_detection/share/ament_index/resource_index/packages
+[1.014s] copying resource/color_detection -> /home/yahboom/test/install/color_detection/share/ament_index/resource_index/packages
+[1.014s] copying package.xml -> /home/yahboom/test/install/color_detection/share/color_detection
+[1.015s] running install_egg_info
+[1.016s] Copying ../../build/color_detection/color_detection.egg-info to /home/yahboom/test/install/color_detection/lib/python3.8/site-packages/color_detection-0.0.0-py3.8.egg-info
+[1.016s] running install_scripts
+[1.035s] Installing color_detector script to /home/yahboom/test/install/color_detection/lib/color_detection
+[1.036s] Installing color_subscriber script to /home/yahboom/test/install/color_detection/lib/color_detection
+[1.036s] writing list of installed files to '/home/yahboom/test/build/color_detection/install.log'
+[1.077s] Invoked command in '/home/yahboom/test/src/color_detection' returned '0': PYTHONPATH=/home/yahboom/test/build/color_detection/prefix_override:/home/yahboom/test/install/color_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/color_detection build --build-base /home/yahboom/test/build/color_detection/build install --record /home/yahboom/test/build/color_detection/install.log --install-scripts $base/lib/color_detection --single-version-externally-managed

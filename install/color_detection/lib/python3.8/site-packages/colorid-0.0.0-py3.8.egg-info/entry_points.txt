@@ -1,0 +1,4 @@
+[console_scripts]
+color_detector = colorid.colorid_pub:main
+color_subscriber = colorid.colorid_sub:main
+
