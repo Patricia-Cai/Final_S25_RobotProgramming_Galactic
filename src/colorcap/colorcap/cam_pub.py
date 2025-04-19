@@ -36,12 +36,9 @@ def cv2_to_imgmsg(cv_image):
 
 class Webcam_Impl(Node): 
     def __init__(self):
-    
-        #####
+   
         super().__init__('webcam')
-        #####
 
-        # initialize a publisher
         self.img_publisher = self.create_publisher(Image, 'image_raw', 1)
 
         #initializa camera parameters
@@ -59,29 +56,17 @@ class Webcam_Impl(Node):
         rval,img_data = self.camera.read()
         if rval:
             self.img_publisher.publish(self.bridge.cv2_to_imgmsg(img_data, "bgr8"))
-            # If you're using win10, uncomment the line below and comment the line above
-            # self.img_publisher.publish(cv2_to_imgmsg(img_data))
             return img_data 
         else:
             print("error")
 
 def main(args=None):
 
-    # initial a ros2
     rclpy.init(args=args)
 
-    # initialize a camera object/ros2 node
     webcam=Webcam_Impl()
     webcam.get_logger().info('Webcam Node Started!') 
-
-    # spin the node (otherwise it only execute once)
-    #####
     rclpy.spin(webcam)
-    #####
-
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
     webcam.destroy_node()
     rclpy.shutdown()
 

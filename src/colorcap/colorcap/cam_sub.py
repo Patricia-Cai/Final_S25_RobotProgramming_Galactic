@@ -10,14 +10,16 @@ import os
 import time
 from collections import defaultdict
 from Rosmaster_Lib import Rosmaster
+import sys
 
 class ColorTrackingNode(Node):
     def __init__(self):
         super().__init__('color_tracking_node')
         self.bridge = CvBridge()
-        self.bot = Rosmaster()  # Initialize Rosmaster robot
+        self.bot = Rosmaster()  
         self.image_counter = 0
         self.current_image = None
+        self.last_color = None  
         
         # Create directory for saved images
         self.save_dir = "captured_images"
@@ -29,24 +31,29 @@ class ColorTrackingNode(Node):
         
         # Create display window
         cv2.namedWindow("Camera Controls", cv2.WINDOW_NORMAL)
-        cv2.resizeWindow("Camera Controls", 640, 200)
+        cv2.resizeWindow("Camera Controls", 640, 240)
         self.update_instructions()
 
     def update_instructions(self, last_capture=None):
         """Create a control panel with instructions"""
-        control_panel = np.zeros((200, 640, 3), dtype=np.uint8)
-        
-        # Main instructions
+        control_panel = np.zeros((240, 640, 3), dtype=np.uint8)
+
         cv2.putText(control_panel, "CONTROLS:", (20, 40), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2)
-        cv2.putText(control_panel, "Press 'C' to CAPTURE and set lights", (20, 80), 
+        cv2.putText(control_panel, "Press 'C' - CAPTURE and set lights", (20, 80), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-        cv2.putText(control_panel, "Press 'Q' to QUIT", (20, 120), 
+        cv2.putText(control_panel, "Press 'R' - RESET lights", (20, 120), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 165, 0), 2)  # Orange color
+        cv2.putText(control_panel, "Press 'Q' - QUIT program", (20, 160), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+       
+        if self.last_color:
+            r, g, b = self.last_color
+            cv2.putText(control_panel, f"Last RGB: ({r},{g},{b})", (20, 200, 
+                       cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
         
-        # Last capture feedback
         if last_capture:
-            cv2.putText(control_panel, f"Last capture: {last_capture}", (20, 160), 
+            cv2.putText(control_panel, f"Last capture: {os.path.basename(last_capture)}", (300, 200), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
         
         cv2.imshow("Camera Controls", control_panel)
@@ -66,9 +73,17 @@ class ColorTrackingNode(Node):
             key = cv2.waitKey(1) & 0xFF
             if key == ord('c') or key == ord('C'):
                 self.capture_and_process()
+            elif key == ord('r') or key == ord('R'):
+                self.reset_lights()
             elif key == ord('q') or key == ord('Q'):
                 self.cleanup_and_shutdown()
 
+    def reset_lights(self):
+        for led in range(1, 11):
+            self.bot.set_colorful_lamps(led, 0, 0, 0)
+        self.last_color = None
+        self.get_logger().info("All lights reset")
+        self.update_instructions() 
     def capture_and_process(self):
         if self.current_image is None:
             return
@@ -80,14 +95,14 @@ class ColorTrackingNode(Node):
         hsv_color = np.uint8([[list(prominent_hsv)]])
         bgr_color = cv2.cvtColor(hsv_color, cv2.COLOR_HSV2BGR)[0][0]
         r, g, b = int(bgr_color[2]), int(bgr_color[1]), int(bgr_color[0])
+        self.last_color = (r, g, b)  # Store the last color
         
-        # Set all 10 LEDs to the detected color
         for led in range(1, 11):
             self.bot.set_colorful_lamps(led, r, g, b)
         
         # Save the image
         timestamp = time.strftime("%Y%m%d_%H%M%S")
-        filename = f"{self.save_dir}/capture_{timestamp}_{self.image_counter}.png"
+        filename = os.path.join(self.save_dir, f"capture_{timestamp}_{self.image_counter}.png")
         cv2.imwrite(filename, processed_image)
         
         # Update UI with feedback
@@ -132,9 +147,7 @@ class ColorTrackingNode(Node):
 
     def cleanup_and_shutdown(self):
         # Turn off all LEDs before shutting down
-        for led in range(1, 11):
-            self.bot.set_colorful_lamps(led, 0, 0, 0)
-        
+        self.reset_lights()
         cv2.destroyAllWindows()
         self.destroy_node()
         rclpy.shutdown()
