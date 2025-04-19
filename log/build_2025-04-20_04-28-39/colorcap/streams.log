@@ -1,0 +1,25 @@
+[1.346s] Invoking command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorcap': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colorcap build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/install.log --install-scripts $base/lib/colorcap --single-version-externally-managed
+[1.627s] running egg_info
+[1.628s] writing ../../build/colorcap/colorcap.egg-info/PKG-INFO
+[1.630s] writing dependency_links to ../../build/colorcap/colorcap.egg-info/dependency_links.txt
+[1.630s] writing entry points to ../../build/colorcap/colorcap.egg-info/entry_points.txt
+[1.630s] writing requirements to ../../build/colorcap/colorcap.egg-info/requires.txt
+[1.630s] writing top-level names to ../../build/colorcap/colorcap.egg-info/top_level.txt
+[1.671s] reading manifest file '../../build/colorcap/colorcap.egg-info/SOURCES.txt'
+[1.673s] writing manifest file '../../build/colorcap/colorcap.egg-info/SOURCES.txt'
+[1.673s] running build
+[1.673s] running build_py
+[1.674s] copying colorcap/cam_sub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap
+[1.675s] running install
+[1.676s] running install_lib
+[1.678s] copying /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build/lib/colorcap/cam_sub.py -> /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap
+[1.679s] byte-compiling /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap/cam_sub.py to cam_sub.cpython-38.pyc
+[1.682s] running install_data
+[1.684s] running install_egg_info
+[1.687s] removing '/home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap-0.0.0-py3.8.egg-info' (and everything under it)
+[1.687s] Copying ../../build/colorcap/colorcap.egg-info to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages/colorcap-0.0.0-py3.8.egg-info
+[1.689s] running install_scripts
+[1.714s] Installing webcam_pub script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/colorcap
+[1.715s] Installing webcam_sub script to /home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/colorcap
+[1.716s] writing list of installed files to '/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/install.log'
+[1.806s] Invoked command in '/home/yahboom/Final_S25_RobotProgramming_Galactic/src/colorcap' returned '0': PYTHONPATH=/home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/prefix_override:/home/yahboom/Final_S25_RobotProgramming_Galactic/install/colorcap/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/colorcap build --build-base /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/build install --record /home/yahboom/Final_S25_RobotProgramming_Galactic/build/colorcap/install.log --install-scripts $base/lib/colorcap --single-version-externally-managed
