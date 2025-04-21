@@ -9,6 +9,7 @@ import time
 from collections import defaultdict
 from Rosmaster_Lib import Rosmaster
 import sys
+from std_srvs.srv import Empty
 
 class ColorTrackingNode(Node):
     def __init__(self):
@@ -25,7 +26,8 @@ class ColorTrackingNode(Node):
 
         # Create subscriber
         self.img_subscription = self.create_subscription(Image, 'image_raw', self.img_callback, 1)
-        
+        #create service
+        self.reset_service = self.create_service(Empty, 'reset_leds', self.handle_reset_service)
         # Create display window
         cv2.namedWindow("Camera Controls", cv2.WINDOW_NORMAL)
         cv2.resizeWindow("Camera Controls", 640, 240)
@@ -80,6 +82,10 @@ class ColorTrackingNode(Node):
         self.last_color = None
         self.get_logger().info("All lights reset")
         self.update_instructions() 
+    def handle_reset_service(self, request, response):
+        self.reset_lights()
+        self.get_logger().info("Reset service called via ROS 2 service")
+        return response        
     def capture_and_process(self):
         if self.current_image is None:
             return
