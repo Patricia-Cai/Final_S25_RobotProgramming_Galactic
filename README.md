@@ -1,5 +1,5 @@
 # Final_S25_RobotProgramming_Galactic
-Final project for S25 Intro to Robot Programming Course
+Final project for S25 Intro to Robot Programming Course - The project works with the webcam of the Rosmaster X3 robot to capture images, analyze it for the most prominent RGB/HSV values for color, and lights up the onboard led strip to the same value.
 
 ## Team members
 Zach Nobles
