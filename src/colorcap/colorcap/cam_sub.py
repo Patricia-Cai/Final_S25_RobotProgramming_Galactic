@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#coding=utf-8
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -26,8 +24,7 @@ class ColorTrackingNode(Node):
         os.makedirs(self.save_dir, exist_ok=True)
 
         # Create subscriber
-        self.img_subscription = self.create_subscription(
-            Image, 'image_raw', self.img_callback, 1)
+        self.img_subscription = self.create_subscription(Image, 'image_raw', self.img_callback, 1)
         
         # Create display window
         cv2.namedWindow("Camera Controls", cv2.WINDOW_NORMAL)
@@ -35,7 +32,6 @@ class ColorTrackingNode(Node):
         self.update_instructions()
 
     def update_instructions(self, last_capture=None):
-        """Create a control panel with instructions"""
         control_panel = np.zeros((240, 640, 3), dtype=np.uint8)
 
         cv2.putText(control_panel, "CONTROLS:", (20, 40), 
@@ -43,7 +39,7 @@ class ColorTrackingNode(Node):
         cv2.putText(control_panel, "Press 'C' - CAPTURE and set lights", (20, 80), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
         cv2.putText(control_panel, "Press 'R' - RESET lights", (20, 120), 
-                   cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 165, 0), 2)  # Orange color
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 165, 0), 2)  
         cv2.putText(control_panel, "Press 'Q' - QUIT program", (20, 160), 
                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
        
@@ -95,14 +91,13 @@ class ColorTrackingNode(Node):
         hsv_color = np.uint8([[list(prominent_hsv)]])
         bgr_color = cv2.cvtColor(hsv_color, cv2.COLOR_HSV2BGR)[0][0]
         r, g, b = int(bgr_color[2]), int(bgr_color[1]), int(bgr_color[0])
-        self.last_color = (r, g, b)  # Store the last color
+        self.last_color = (r, g, b)  
         
         for led in range(1, 11):
             self.bot.set_colorful_lamps(led, r, g, b)
         
         # Save the image
-        timestamp = time.strftime("%Y%m%d_%H%M%S")
-        filename = os.path.join(self.save_dir, f"capture_{timestamp}_{self.image_counter}.png")
+        filename = os.path.join(self.save_dir, f"capture_{self.image_counter}.png")
         cv2.imwrite(filename, processed_image)
         
         # Update UI with feedback
@@ -121,7 +116,6 @@ class ColorTrackingNode(Node):
         hsv_pixels = hsv_image.reshape(-1, 3)
         hsv_counts = defaultdict(int)
         
-        # Quantize HSV values
         for pixel in hsv_pixels:
             h = pixel[0] // 30 * 30
             s = pixel[1] // 50 * 50
@@ -146,7 +140,6 @@ class ColorTrackingNode(Node):
         return np.vstack([output, overlay]), prominent_hsv
 
     def cleanup_and_shutdown(self):
-        # Turn off all LEDs before shutting down
         self.reset_lights()
         cv2.destroyAllWindows()
         self.destroy_node()
