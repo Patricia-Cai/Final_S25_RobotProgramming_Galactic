@@ -23,10 +23,17 @@ Dyarra Mitchell
 
 in a terminal run
 ```sh
-ros2 run yahboomcar_visual astra_rgb_image
+ros2 launch astra_camera astro_pro_plus.launch.xml
 ```
 ```sh
-ros2 launch astra_camera astro_pro.launch.xml
+ros2 launch astra_camera astra.launch.xml
+```
+build the workspace, source, and run
+```sh
+ros2 run colorcap webcam_pub
+```
+```sh
+ros2 run colorcap webcam_sub
 ```
 rqt_graph should show camera nodes
 this python code reads the camera data
